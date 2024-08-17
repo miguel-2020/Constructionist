@@ -71,9 +71,9 @@ img {
 }
 
 footer{
-    height: 40em;
     padding-block:1.4em;
     text-align: center;
+    padding-block: 1em;
 }
 
 footer img{
@@ -92,6 +92,7 @@ form {
 	flex-wrap: wrap;
     align-items: baseline;
     gap: 0.5em;
+
 }
 
 form .button--dark{
@@ -108,6 +109,7 @@ select{
     background: transparent;
     outline: none;
     border: 1px solid var(--dark);
+    color: var(--dark);
 
 
 }
@@ -159,9 +161,19 @@ input[type^="text"]{
 }
 
 /* UTILS START*/
+.box{
+  font-size: large;
+}
 .rounded {
   border-radius: 1em;
 }
+
+.arrow-icon{
+  height: 1.2rem;
+  vertical-align: middle;
+  margin-top: 0;
+}
+
 /* UTILS END */
 
 /* COMPONENTS START */
@@ -284,10 +296,11 @@ a.button--dark {
   font-size: 1.4rem;
 }
 
-.site-nav a > span {
+.site-nav a .arrow-icon{
   vertical-align: super;
-  font-size: medium;
 }
+
+
 .site-nav ul {
   display: flex;
 
