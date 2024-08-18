@@ -158,6 +158,7 @@ input[type^="text"]{
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /* UTILS START*/
@@ -197,6 +198,8 @@ input[type^="text"]{
 .button--white {
   background: var(--white);
 }
+
+
 
 .button--dark {
   background: var(--dark);
@@ -345,12 +348,14 @@ a.button--dark {
 }
 
 /*PAGE HEADER START*/
-.site-header{
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-    animation: reveal 0.8s linear forwards;
+[data-state="play"]{
+   animation: revealFromRight 0.8s linear forwards;
 }
 
-@keyframes reveal{
+@keyframes revealFromRight{
+  from{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+  }
     to{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
@@ -667,3 +672,5 @@ a.button--dark {
 
   /* ADVANTAGES SECTION END */
 }
+
+
