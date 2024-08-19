@@ -1,3 +1,4 @@
+
 const slideInFromRight = {
   start: { opacity: 0, x: 200 },
   end: { opacity: 1, x: 0 },
@@ -23,6 +24,7 @@ const scrollTrigger = {
   start: "50%",
   end: "100%",
 };
+
 
 document.addEventListener("DOMContentLoaded", (event) => {
   var tl = gsap.timeline({ defaults: { duration: 1, ease: "power1.out" } });
@@ -107,3 +109,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
   advanceTl.fromTo(".site-advantages-slide-from-bottom", { opacity: 0, y: 200 }, { opacity: 1, y: 0 }, "<40%");
   // END
 });
+
+
